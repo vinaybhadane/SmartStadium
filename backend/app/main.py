@@ -4,8 +4,11 @@ Uses the create_app() factory pattern for clean test isolation
 and configurable middleware registration.
 """
 
+import os
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 from slowapi import _rate_limit_exceeded_handler
 from slowapi.errors import RateLimitExceeded
 
@@ -64,5 +67,9 @@ def create_app() -> FastAPI:
     app.include_router(analytics_router, prefix="/api")
     app.include_router(navigation_router, prefix="/api")
     app.include_router(assist_router, prefix="/api")
+
+    # --- Static Files (Frontend) ---
+    if os.path.exists("static"):
+        app.mount("/", StaticFiles(directory="static", html=True), name="static")
 
     return app

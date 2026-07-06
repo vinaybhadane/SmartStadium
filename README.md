@@ -10,7 +10,7 @@
 AI-powered venue intelligence for fans, organizers, volunteers, and on-ground staff — from smart indoor navigation to real-time multilingual decision support.
 
 ## Live Demo
-🔗 https://stadium-iq-run-url-placeholder.a.run.app (Placeholder after deployment)
+🔗 https://stadium-iq-637795596584.us-central1.run.app/
 
 ---
 

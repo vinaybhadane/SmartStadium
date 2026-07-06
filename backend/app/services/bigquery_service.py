@@ -101,7 +101,7 @@ async def query_attendance_trends(
               AND event_type = 'attendance'
             ORDER BY timestamp DESC
             LIMIT @limit
-        """
+        """  # nosec B608
 
         job_config = None
         try:

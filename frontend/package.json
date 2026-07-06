@@ -33,7 +33,7 @@
     "autoprefixer": "^10.4.20",
     "axe-core": "^4.10.0",
     "eslint": "^9.21.0",
-    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
     "globals": "^15.14.0",
     "jsdom": "^25.0.0",
     "postcss": "^8.4.49",

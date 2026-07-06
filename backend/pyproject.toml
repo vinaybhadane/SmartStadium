@@ -43,3 +43,8 @@ ignore_missing_imports = true
 [[tool.mypy.overrides]]
 module = ["google.*", "vertexai.*", "slowapi.*", "firebase_admin.*"]
 ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = ["numpy.*"]
+ignore_errors = true
+follow_imports = "skip"

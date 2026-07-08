@@ -2,8 +2,8 @@
 
 SmartStadium is an AI-powered platform for the **FIFA World Cup 2026** designed to streamline stadium operations and enhance the spectator matchday experience at Estadio Azteca. Spectators receive grounded navigation, public transit directions, and step-free accessibility support; coordinators leverage live crowd logs, incident alerts, and GenAI situation reports for real-time decisions.
 
-**Live demo:** <https://smartstadium-851755555005.asia-south1.run.app>
-**Region:** asia-south1 · **GCP project:** week-4-501612 · **Owner:** Vinay Bhadane
+**Live demo:** <https://smartstadium-service-637795596584.us-central1.run.app/>
+**Region:** us-central1 · **GCP project:** stadiumiq06 · **Owner:** Vinay Bhadane
 
 ---
 
@@ -153,7 +153,7 @@ All services utilize their official Google Cloud Platform Node.js SDK wrappers.
 
 | Service | Application Role | Configuration |
 | --- | --- | --- |
-| **Cloud Run** | Hosts containerized portal (API + React), min-instances=1, region: asia-south1. | `Dockerfile` |
+| **Cloud Run** | Hosts containerized portal (API + React), min-instances=1, region: us-central1. | `Dockerfile` |
 | **Gemini (`@google/genai`)** | Outputs translated guide answers and situations reports. | `server/src/lib/gemini.ts` |
 | **Firestore** | Stores real-time spectator areas, safety logs, and green metrics. | `server/src/lib/firestore.ts` |
 | **Secret Manager** | Mounts the secret `GEMINI_API_KEY` directly inside the container instance. | deploy configuration |

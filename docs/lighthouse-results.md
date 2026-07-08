@@ -1,6 +1,6 @@
 # Lighthouse and Accessibility Audits
 
-Verified against the active deployment of SmartStadium (hosted at `https://smartstadium-851755555005.asia-south1.run.app`) utilizing Lighthouse **12.8.2** (headless Chrome) in July 2026.
+Verified against the active deployment of SmartStadium (hosted at `https://smartstadium-service-637795596584.us-central1.run.app/`) utilizing Lighthouse **12.8.2** (headless Chrome) in July 2026.
 
 | Route         | Performance | Accessibility | Best Practices | SEO |
 | ------------- | ----------- | ------------- | -------------- | --- |
@@ -13,7 +13,7 @@ Accessibility scores reached 100 across all paths with zero violations (contrast
 ## Repro
 
 ```bash
-npx lighthouse@12 https://smartstadium-851755555005.asia-south1.run.app/ \
+npx lighthouse@12 https://smartstadium-service-637795596584.us-central1.run.app/ \
   --only-categories=performance,accessibility,best-practices,seo \
   --chrome-flags="--headless=new" --view
 ```
